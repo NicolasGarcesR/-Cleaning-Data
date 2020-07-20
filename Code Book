@@ -1,0 +1,26 @@
+The data in the run_analysis.R scirpt is downloaded from the UCI HAR Dataset folder
+
+The raw data is the following, all of them comes in text format:
+- features: Raw signals from the accelerometer.
+- activities : Group of activities prerformed by the tested people.
+- subject_test: data from the tested people, in the test group.
+- subject_train: data from the tested people, in the train group.
+- x_tests: recorded features from the tested data.
+- y_tests: labels from the x_test activities.
+- x_train: recorded features from the train data.
+- y_train: labels from the x_train activities.
+    
+then, it was procesed in 3 datasets: 
+- x: the combination of the x_tests and x_train dataset.
+- y: the combination of the y_tests and y_train dataset.
+- Subjec:  the combination of the subjec_tests and subjec_train dataset.
+  
+and finally merged into the "Data" dataset.
+
+the "data_2" dataset is the "Data" dataset processed in this order:
+
+1.Takes the observations that contain the mean and standar deviation.
+2.Names the activities in the datasets.
+3.Labels the dataset with descriptive variable names.
+
+- "Data_3": takes the mean and standar deviation by subject and activity from the "data_2" dataset
